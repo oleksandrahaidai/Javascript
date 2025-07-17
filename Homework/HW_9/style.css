@@ -1,0 +1,16 @@
+.wrap {
+    width: 400px;
+    height: 200px;
+    background: grey;
+    color: red;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position{
+    display: inline-block;
+    font-size: 30px;
+    padding-right: 10px;
+}
