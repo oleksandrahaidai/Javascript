@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title></head>
+<body>
+
+<script>
+
+let dateDiv = document.createElement('div')
+document.body.appendChild(dateDiv)
+
+const list = JSON.parse(localStorage.getItem('sessionsList'));
+
+for (const item of list) {
+ let divElement = document.createElement('div')
+ dateDiv.appendChild(divElement);
+ divElement.innerText = item;
+}
+</script>
+
+</body>
+</html>
