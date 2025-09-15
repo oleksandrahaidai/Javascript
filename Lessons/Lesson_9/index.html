@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>DOM title</h1>
+
+<ul class ="menu" id="list1">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+
+</ul>
+
+<ul class ="menu" id="list2">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+</ul>
+<script>
+// ___________getElementById_________________
+    let ul1 = document.getElementById('list1');
+    console.log(ul1);
+    let list1 = ul1.getElementsByTagName('li');
+    console.log(list1);
+
+// ___________getElementByClassName_________________
+    let menuCollection = document.getElementsByClassName('menu');
+    console.log(menuCollection);
+for (const element of menuCollection) {
+    console.log(element);
+}
+// ___________getElementByTagName_________________
+
+let liList = document.getElementsByTagName('li');
+console.log(liList);
+
+let ul2 = document.getElementById('list1')
+let liList1 = (ul2.getElementsByTagName('li'));
+console.log(liList1);
+
+
+// _______________querySelector_____________
+
+console.log(document.querySelector('li'));
+console.log(document.querySelector('.menu'));
+console.log(document.querySelectorAll('li'));
+console.log(document.querySelectorAll('.menu'));
+console.log(document.querySelectorAll('#list1 > li'));
+console.log(document.querySelectorAll('.menu:nth-child(2)>li'));
+let nodeList = document.querySelectorAll('#list2 > li');
+console.log(nodeList);
+for (const node of nodeList) {
+    console.log(node);
+}
+
+</script>
+
+
+
+<!--<script>-->
+<!--    console.log(document)-->
+<!--    console.log(document.head)-->
+<!--    console.log(document.head.children)-->
+<!--    console.log(document.body)-->
+<!--    console.log(document.body.innerHTML)-->
+<!--</script>-->
+
+</body>
+</html>
+
+
