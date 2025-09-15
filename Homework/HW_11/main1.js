@@ -27,7 +27,7 @@ fetch (`https://dummyjson.com/recipes`)
                 "userId": ${recipe.userId},
                 "rating": ${recipe.rating},
                 "reviewCount": ${recipe.reviewCount},
-                "mealType": ${recipe.mealType}
+                "mealType": ${recipe.mealType},
                 "ingredients":`
 
             let ingredients = recipe.ingredients;
