@@ -13,6 +13,7 @@
             for (const cart of carts) {
                 let cartDiv = document.createElement('div')
                 let infoDiv = document.createElement('div')
+
                 infoDiv.innerText = `
                    "discountedTotal": ${cart.discountedTotal},
                    "id": ${cart.id},
